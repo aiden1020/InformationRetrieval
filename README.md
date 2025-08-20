@@ -1,4 +1,4 @@
-# Information Retrieval Projects
+# NYCU CSIC30169 Information Retrieval
 
 Comprehensive coursework repository covering three modules:
 
@@ -195,4 +195,3 @@ python HW2/training.py
 * Add Dockerfile for reproducible multi-platform setup.
 
 ---
-Happy experimenting!
