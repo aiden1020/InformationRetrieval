@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Datasets
+HW1/*.csv
+HW2/2024-generative-information-retrieval-hw-2/articles/
+HW2/2024-generative-information-retrieval-hw-2/test.json
+HW2/2024-generative-information-retrieval-hw-2/train.json
+HW2/2024-generative-information-retrieval-hw-2/valid.json
+HW2/2024-generative-information-retrieval-hw-2/*.csv
+HW2/bm_25/
+HW2/tf_idf/
