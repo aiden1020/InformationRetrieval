@@ -7,7 +7,7 @@ Comprehensive coursework repository covering three modules:
 3. HW3: Multimodal Image Retrieval (VLM caption/object extraction + Sentence-BERT semantic search, and CLIP zero‑shot retrieval).
 
 ---
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 git clone <this-repo>
@@ -30,7 +30,7 @@ pip install --pre torch torchvision torchaudio --index-url https://download.pyto
 ```
 
 ---
-## 📁 Repository Structure (excerpt)
+## Repository Structure (excerpt)
 ```
 HW1/
 	BM25_train.py | BM25_test.py | TFIDF_train.py | TFIDF_test.py | utils.py | model/
@@ -156,7 +156,7 @@ Artifacts produced:
 * Embeddings normalized L2 to enable cosine via dot product efficiency.
 
 ---
-## 📊 Metrics
+## Metrics
 | Module | Metric | Notes |
 |--------|--------|-------|
 | HW1 | Recall@3 | Hit if doc index equals query index appears in top-3. |
@@ -164,18 +164,18 @@ Artifacts produced:
 | HW3 | (Implicit) Retrieval Quality | Top‑30 candidate ranking (no provided ground truth here). |
 
 ---
-## 🔧 Key Dependencies
+## Key Dependencies
 See `requirements.txt` for full list: pandas, numpy, scikit-learn, torch, transformers, datasets, nltk, rank_bm25, sentence-transformers, faiss, tqdm, Pillow, ollama.
 
 ---
-## ⚠️ Notes & Tips
+## Notes & Tips
 * FAISS GPU path in `Full_Preprocess.py` assumes a visible GPU; switch to `faiss.IndexFlatL2` CPU if needed.
 * Large local models (vicuna:13b, llava:34b) require significant RAM/VRAM; downscale if constrained.
 * Re-run `nltk.download('punkt')` if tokenizer errors appear.
 * Token length overflow → adjust `max_length` (currently 512) or adopt long-context transformer.
 
 ---
-## 🧪 Minimal Sanity Checks
+## Minimal Sanity Checks
 ```bash
 # HW1 quick smoke
 python HW1/BM25_train.py | head -n 15
@@ -188,22 +188,11 @@ python HW2/training.py
 ```
 
 ---
-## ✅ Future Improvements
+## Future Improvements
 * Add pytest unit tests for BM25 / TF‑IDF correctness.
 * Introduce retrieval evaluation with standard IR metrics (MRR, MAP) using synthetic relevance labels.
 * Batch + streaming caption generation with retry logic for robustness.
 * Add Dockerfile for reproducible multi-platform setup.
-
----
-## 📄 License
-Academic / educational use. Review external model licenses (Vicuna, LLaVA, BERT) before redistribution.
-
----
-## 🙌 Acknowledgments
-* Hugging Face Transformers & Datasets
-* Sentence-Transformers & FAISS
-* rank_bm25
-* Ollama local model runtime
 
 ---
 Happy experimenting!
